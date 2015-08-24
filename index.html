@@ -5,71 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'/>
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <!--Start of page content-->
   <!--Header, including logo and name-->
   <body>
-    <div class="container title-row">
-      <div class="row">
-        <div class="col-md-6"><img class="img-circle" src="http://lorempixel.com/100/100/animals" alt="logo placeholder"></div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="title-super text-thin">Wesley Rose</h1>
+    <section class="container title-row">
+      <section class="row">
+        <section class="col-md-6">
+          <img class="img-circle" src="http://lorempixel.com/100/100/animals" alt="logo placeholder">
+        </section>
+        <section class="col-md-6 title-super">
+          <h1 class="text-thin">Wesley Rose</h1>
           <h4>Front-end Ninja</h4>
-        </div>
-      </div>
+        </section>
+      </section>
       <hr>
       
     <!--Main image with featured work-->
-      <div id="main-body-image">
-        <img class="img-responsive" src="http://lorempixel.com/1140/350/animals" alt="Main Project" data-toggle="modal" data-target="#project1">
-      </div>
+      <section id="main-body-image">
+        <img class="img-responsive" src="http://lorempixel.com/1140/350/animals" 
+        srcset="http://lorempixel.com/160/120/animals 160w,
+        http://lorempixel.com/320/250/animals 320w,
+        http://lorempixel.com/640/500/animals 640w,
+        http://lorempixel.com/1140/600/animals 1140w" 
+        alt="Main Project" data-toggle="modal" data-target="#project1">
+      </section>
       
     <!--This section will be to navigate between the different available series-->
-      <div class="row">
-        <div class="col-md-12">
+      <section class="row">
+        <section class="col-md-12">
           <h2 class="text-muted">Featured Work</h2>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
+        </section>
+      </section>
+      <section class="row text-center">
+        <section class="col-md-4">
           <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="APPIFY">
           <h3 class="subtitle">APPIFY</h3>
-          <p><a href="http://github.com/udacity/appify">Link to project</a></p>
-        </div>
-        <div class="col-md-4">
+          <p>
+            <a href="http://github.com/udacity/appify">Link to project</a>
+          </p>
+        </section>
+        <section class="col-md-4">
           <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="SUNFLOWER">
           <h3 class="subtitle">SUNFLOWER</h3>
-          <p><a href="http://github.com/udacity/sunflower">Link to project</a></p>
-        </div>
-        <div class="col-md-4">
+          <p>
+            <a href="http://github.com/udacity/sunflower">Link to project</a>
+          </p>
+        </section>
+        <section class="col-md-4">
           <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="BOKEH">
           <h3 class="subtitle">BOKEH</h3>
-          <p><a href="http://github.com/udacity/bokeh">Link to project</a></p>
-        </div>
-      </div>
-    </div>
+          <p>
+            <a href="http://github.com/udacity/bokeh">Link to project</a>
+          </p>
+        </section>
+      </section>
+    </section>
     <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+    <section class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <section class="modal-dialog">
+        <section class="modal-content">
+          <section class="modal-header">
             <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://lorempixel.com/1140/350">
+          </section>
+          <section class="modal-body">
+            <img class="img-responsive" src="http://lorempixel.com/1140/350" alt="Modal image">
             <p>This was my first project in this class. I learned a lot about HTML and CSS.</p>
-          </div>
-          <div class="modal-footer">
+          </section>
+          <section class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
+        </section>
+      </section>
+    </section>
 
   </body>
 </html>

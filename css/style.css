@@ -1,38 +1,42 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    border-left: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left: 5px;
 	border-right: 5px;
 	max-width: 1140px;
-	margin:auto;
+	margin: auto;
 }
 
 body {
 	font-family: 'Lato', sans-serif;
-	font-weight:300;
+	font-weight: 300;
 	color: #747704;
 }
 
 hr {
-	border-width:5px;
+	border-width: 5px;
 }
+
 .text-muted {
-	color:#BCBBBB;
+	color: #bcbbbb;
 }
+
 .text-thin {
-	font-weight:100;
+	font-weight: 300;
 }
 
 .title-super {
-	font-size:60px;
+	font-size: 60px;
+	text-align: right;
+	text-transform: uppercase;
 }
 
 .title-row {
-	margin-top:20px;
+	margin-top: 20px;
 }
 
 .subtitle {
-	font-size:40px;
+	font-size: 40px;
 }
