@@ -1,5 +1,13 @@
 @media screen and (max-width: 540px) {
-	.title-super {
+	.sub-header {
 		text-align: center;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.title-super {
+		width: 100vw;
 	}
 }

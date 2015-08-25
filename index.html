@@ -9,57 +9,68 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <!--Start of page content-->
   <!--Header, including logo and name-->
   <body>
-    <section class="container title-row">
+    <div class="container title-row">
       <section class="row">
-        <section class="col-md-6">
+        <section class="col-xs-3 col-sm-3 col-md-3 logo">
           <img class="img-circle" src="images/logo-100.jpg" alt="logo placeholder">
         </section>
-        <section class="col-md-6 title-super">
+        <section class="col-xs-9 col-sm-9 col-md-9 title-super">
           <h1 class="text-thin">quiet creature</h1>
           <h4>illustrations</h4>
         </section>
       </section>
-      <hr>
       
+    </div> 
+    <hr>
     <!--Main image with featured work-->
-      <section id="main-body-image">
-        <img class="img-responsive" src="images/sunflowers_crop-1200-large_2x.jpg" 
-        alt="sunflower ladies" data-toggle="modal" data-target="#project1">
-      </section>
-      
+    <div class="container">
+      <div class="row">
+        <section class="col-md-12" id="main-body-image">
+          <picture>
+            <source media="(max-width: 750px) and (min-width: 400px)" srcset="images/sunflowers_crop-750.jpg"/>
+            <source media="(max-width: 399px)" srcset="images/sunflowers_crop-400.jpg"/>
+            <img class="img-responsive" src="images/sunflowers_crop-1200.jpg" 
+            alt="sunflower ladies" data-toggle="modal" data-target="#project1">
+          </picture>
+        </section>
+      </div>
+    </div>
+
     <!--This section will be to navigate between the different available series-->
+    <div class="container">  
       <section class="row">
         <section class="col-md-12">
-          <h2 class="text-muted">Featured Work</h2>
+          <h2 class="text-muted sub-header">Featured Work</h2>
         </section>
       </section>
       <section class="row text-center">
-        <section class="col-md-4">
+        <section class="col-sm-4 col-md-4">
           <picture>
-            <img class="img-responsive sub-image" src="images/anemones-600-small_1x.jpg" alt="anemones and chambray">
+            <img class="img-responsive sub-image" src="images/anemones-400.jpg" alt="anemones and chambray">
           </picture class="sub-image">
           <h3 class="subtitle">anemones</h3>
         </section>
-        <section class="col-md-4">
+        <section class="col-sm-4 col-md-4">
           <picture class="sub-image">
-            <img class="img-responsive sub-image" src="images/hawaiian-600-small_1x.jpg" alt="hawaiian flowers, low back">
+            <img class="img-responsive sub-image" src="images/hawaiian-400.jpg" alt="hawaiian flowers, low back">
           </picture>
           <h3 class="subtitle">hawaiian</h3>
         </section>
-        <section class="col-md-4">
+        <section class="col-sm-4 col-md-4">
           <picture class="sub-image">
-            <img class="img-responsive" src="images/kiehls-600-small_1x.jpg" alt="kiehls and lillies?">
+            <img class="img-responsive" src="images/birdsofparadise-400.jpg" alt="birds of paradise">
           </picture>
-          <h3 class="subtitle">kiehls</h3>
+          <h3 class="subtitle">birds of paradise</h3>
         </section>
       </section>
-    </section>
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -68,7 +79,7 @@
             <h4 class="modal-title text-center" id="myModalLabel">Sunflowers</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/sunflowers-600-small_1x.jpg" alt="sunflower ladies, full">
+            <img class="img-responsive" src="images/sunflowers-1200.jpg" alt="sunflower ladies, full">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Order</button>
@@ -79,4 +90,11 @@
     </div>
 
   </body>
+  <footer>
+    <div id="social" class="text-center">
+      <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter"></a>
+      <a href="http://www.instagram.com/quietcreature" class="zocial-instagram"></a>
+    </div>
+  </footer>
+
 </html>
