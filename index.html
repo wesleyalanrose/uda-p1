@@ -18,23 +18,19 @@
     <section class="container title-row">
       <section class="row">
         <section class="col-md-6">
-          <img class="img-circle" src="http://lorempixel.com/100/100/animals" alt="logo placeholder">
+          <img class="img-circle" src="images/logo-100.jpg" alt="logo placeholder">
         </section>
         <section class="col-md-6 title-super">
-          <h1 class="text-thin">Wesley Rose</h1>
-          <h4>Front-end Ninja</h4>
+          <h1 class="text-thin">quiet creature</h1>
+          <h4>illustrations</h4>
         </section>
       </section>
       <hr>
       
     <!--Main image with featured work-->
       <section id="main-body-image">
-        <img class="img-responsive" src="http://lorempixel.com/1140/350/animals" 
-        srcset="http://lorempixel.com/160/120/animals 160w,
-        http://lorempixel.com/320/250/animals 320w,
-        http://lorempixel.com/640/500/animals 640w,
-        http://lorempixel.com/1140/600/animals 1140w" 
-        alt="Main Project" data-toggle="modal" data-target="#project1">
+        <img class="img-responsive" src="images/sunflowers_crop-1200-large_2x.jpg" 
+        alt="sunflower ladies" data-toggle="modal" data-target="#project1">
       </section>
       
     <!--This section will be to navigate between the different available series-->
@@ -45,45 +41,42 @@
       </section>
       <section class="row text-center">
         <section class="col-md-4">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="APPIFY">
-          <h3 class="subtitle">APPIFY</h3>
-          <p>
-            <a href="http://github.com/udacity/appify">Link to project</a>
-          </p>
+          <picture>
+            <img class="img-responsive sub-image" src="images/anemones-600-small_1x.jpg" alt="anemones and chambray">
+          </picture class="sub-image">
+          <h3 class="subtitle">anemones</h3>
         </section>
         <section class="col-md-4">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="SUNFLOWER">
-          <h3 class="subtitle">SUNFLOWER</h3>
-          <p>
-            <a href="http://github.com/udacity/sunflower">Link to project</a>
-          </p>
+          <picture class="sub-image">
+            <img class="img-responsive sub-image" src="images/hawaiian-600-small_1x.jpg" alt="hawaiian flowers, low back">
+          </picture>
+          <h3 class="subtitle">hawaiian</h3>
         </section>
         <section class="col-md-4">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/animals" alt="BOKEH">
-          <h3 class="subtitle">BOKEH</h3>
-          <p>
-            <a href="http://github.com/udacity/bokeh">Link to project</a>
-          </p>
+          <picture class="sub-image">
+            <img class="img-responsive" src="images/kiehls-600-small_1x.jpg" alt="kiehls and lillies?">
+          </picture>
+          <h3 class="subtitle">kiehls</h3>
         </section>
       </section>
     </section>
     <!-- Modal -->
-    <section class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <section class="modal-dialog">
-        <section class="modal-content">
-          <section class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-          </section>
-          <section class="modal-body">
-            <img class="img-responsive" src="http://lorempixel.com/1140/350" alt="Modal image">
-            <p>This was my first project in this class. I learned a lot about HTML and CSS.</p>
-          </section>
-          <section class="modal-footer">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center" id="myModalLabel">Sunflowers</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/sunflowers-600-small_1x.jpg" alt="sunflower ladies, full">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Order</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </section>
-        </section>
-      </section>
-    </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
