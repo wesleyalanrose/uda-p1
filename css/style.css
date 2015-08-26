@@ -1,13 +1,13 @@
 [class*="zocial-"]:before {
-  color: black;
-  display: inline-block;
-  font-family: 'zocial', sans-serif;
-  text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
+	color: black;
+	display: inline-block;
+	font-family: 'zocial', sans-serif;
+	text-shadow: 3px 3px 3px #aaa;
+	width: 2em;
 }
 
 a:hover [class*="zocial-"]:before {
-  color: #3d85c6;
+ 	color: #3d85c6;
 }
 
 * {
