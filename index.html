@@ -18,14 +18,28 @@
       <section class="row">
         <section class="col-xs-12 col-sm-3 col-md-3 logo">
           <img class="img-circle" src="images/logo-100.jpg" alt="logo placeholder">
+          <a id="menu" class="header__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
         </section>
         <section class="col-xs-12 col-sm-9 col-md-9 title-super">
           <h1 class="text-thin">quiet creature</h1>
           <h4>illustrations</h4>
         </section>
       </section>
-      
-    </div> 
+        
+    </div>
+    <hr>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">PRINTS</a></li>
+        <li class="nav__item"><a href="#">COMMISSIONS</a></li>
+        <li class="nav__item"><a href="#">ABOUT</a></li>
+        <li class="nav__item"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
     <hr>
     <!--Main image with featured work-->
     <div class="container">
@@ -53,19 +67,19 @@
           <picture class="sub-image">
             <img class="img-responsive sub-image" src="images/anemones-400.jpg" alt="anemones and chambray">
           </picture>
-          <h3 class="subtitle">anemones</h3>
+          <p class="subtitle">anemones</p>
         </section>
         <section class="col-sm-4 col-md-4">
           <picture class="sub-image">
             <img class="img-responsive sub-image" src="images/hawaiian-400.jpg" alt="hawaiian flowers, low back">
           </picture>
-          <h3 class="subtitle">hawaiian</h3>
+          <p class="subtitle">hawaiian</p>
         </section>
         <section class="col-sm-4 col-md-4">
           <picture class="sub-image">
             <img class="img-responsive" src="images/birdsofparadise-400.jpg" alt="birds of paradise">
           </picture>
-          <h3 class="subtitle">birds of paradise</h3>
+          <p class="subtitle">birds of paradise</p>
         </section>
       </section>
     </div>
@@ -93,6 +107,19 @@
       </div>
     </footer>
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
   </body>
 </html>
