@@ -3,6 +3,10 @@
 }
 
 @media screen and (max-width: 549px) {
+	#nav-hr {
+		display: none;
+	}
+
 	.sub-header {
 		text-align: center;
 	}
@@ -33,6 +37,10 @@
 		transition: transform 0.3s ease;
 	}
 
+	.nav__list {
+		flex-direction: column;
+	}
+
 	.nav.open {
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
@@ -42,7 +50,8 @@
 		display: list-item;
 		border-bottom: 1px solid #E0E0E0;
 		width: 100%;
-		text-align: left;
+		text-align: center;
+		font-size: 10px;
 	}
 
 	.header__menu {

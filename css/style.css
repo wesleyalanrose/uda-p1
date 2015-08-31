@@ -31,26 +31,34 @@ footer {
 	margin-bottom: 10px;
 }
 
+ul {
+	list-style-position: inside;
+}
+
 .nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+	width: 100%;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: inline-block;
 }
 
 .nav__item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
-  text-transform: uppercase;
+	box-sizing: border-box;
+	width: 24%;
+	text-align: center;
+	line-height: 24px;
+	padding: 24px;
+	text-transform: uppercase;
+	font-size: 16px;
+	float: left;
 }
 
 .text-muted {
@@ -79,4 +87,3 @@ footer {
 .sub-image {
 	width: calc((100vw - 20) / 3);
 }
-

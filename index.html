@@ -14,8 +14,8 @@
   <!--Start of page content-->
   <!--Header, including logo and name-->
   <body>
-    <div class="container title-row">
-      <section class="row">
+    <div class="container">
+      <section class="row title-row">
         <section class="col-xs-12 col-sm-3 col-md-3 logo">
           <img class="img-circle" src="images/logo-100.jpg" alt="logo placeholder">
           <a id="menu" class="header__menu">
@@ -29,20 +29,21 @@
           <h4>illustrations</h4>
         </section>
       </section>
-        
-    </div>
-    <hr>
-    <nav id="drawer" class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">PRINTS</a></li>
-        <li class="nav__item"><a href="#">COMMISSIONS</a></li>
-        <li class="nav__item"><a href="#">ABOUT</a></li>
-        <li class="nav__item"><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
-    <hr>
-    <!--Main image with featured work-->
-    <div class="container">
+      <!--Navigation menu -->
+      <hr>
+      <section class="row">
+        <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">PRINTS</a></li>
+            <li class="nav__item"><a href="#">COMMISSIONS</a></li>
+            <li class="nav__item"><a href="#">ABOUT</a></li>
+            <li class="nav__item"><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </section>
+      <hr id="nav-hr">
+      <!--Main image with featured work-->
+
       <div class="row">
         <section class="col-md-12" id="main-body-image">
           <picture>
@@ -53,10 +54,10 @@
           </picture>
         </section>
       </div>
-    </div>
 
-    <!--This section will be to navigate between the different available series-->
-    <div class="container">  
+
+      <!--This section will be to navigate between the different available series-->
+
       <section class="row">
         <section class="col-md-12">
           <h2 class="text-muted sub-header">Featured Work</h2>
@@ -82,20 +83,21 @@
           <p class="subtitle">birds of paradise</p>
         </section>
       </section>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-center" id="myModalLabel">Sunflowers</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images/sunflowers-1200.jpg" alt="sunflower ladies, full">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Order</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-center" id="myModalLabel">Sunflowers</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/sunflowers-1200.jpg" alt="sunflower ladies, full">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Order</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
